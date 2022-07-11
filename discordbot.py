@@ -1,4 +1,4 @@
-import discord.py-self
+import discord
 import asyncio
 import re
 import os
