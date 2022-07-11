@@ -42,7 +42,7 @@ async def on_message(message):
             image_url = message.attachments[0].url
         else:
             image_url = ""
-        await send_message('***{0.author}***\n'.format(message) + message.content)
+        await send_message('***{0.author}***\n'.format(message) + message.content + image_url)
 
 
 @target_client.event
