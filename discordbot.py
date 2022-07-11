@@ -1,9 +1,7 @@
-import discord
+import discord.py-self
 import asyncio
 import re
 import os
-
-bot.run(os.environ.get('USER_TOKEN'), bot=False)
 
 source_token = os.environ['SOURCE_DISCORD_BOT_TOKEN']
 target_token = os.environ['TARGET_DISCORD_BOT_TOKEN']
