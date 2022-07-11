@@ -44,7 +44,7 @@ async def on_message(message):
             image_url = find_url(message.clean_content)[0]
         else:
             image_url = ""
-        await send_message('***{0.author}***\n'.format(message) + message.content + image_url)
+        await send_message('***{0.author}***\n'.format(message) + message.content + " " + image_url)
 
 
 @target_client.event
