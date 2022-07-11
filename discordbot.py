@@ -40,6 +40,8 @@ async def on_message(message):
         author_name = message.author.name + "#" + message.author.discriminator
         if len(message.attachments) > 0:
             image_url = message.attachments[0].url
+        elif len(find_url(message.clean_content)) > 0:
+            image_url = find_url(message.clean_content)[0]
         else:
             image_url = ""
         await send_message('***{0.author}***\n'.format(message) + message.content + image_url)
